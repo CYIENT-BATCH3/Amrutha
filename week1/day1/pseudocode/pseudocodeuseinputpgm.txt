@@ -1,0 +1,8 @@
+BEGIN
+global variable INT num
+Assign value to num
+CHAR ch
+CONST int b 
+OUTPUT "enter the character"
+INPUT ch
+OUTPUT all tha variables 
