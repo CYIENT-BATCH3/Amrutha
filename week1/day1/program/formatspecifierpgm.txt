@@ -1,0 +1,19 @@
+
+wap to input data from user using scanf() and display various format specifiers using printf
+#include <stdio.h>
+int main()
+{
+    int num;
+    char ch;
+    float temp;
+    printf("enter the  character\n");
+    scanf("%c",&ch);
+    printf("enter the  number\n");
+    scanf("%d",&num);
+    printf("enter the temperature\n");
+    scanf("%f",&temp);
+    printf("entered number is num=%d\n using char specifier is num=%c\n using float specifier is %f ",num,num,num);
+    printf("\nentered character is ch=%c\n using int specifier is ch=%d\n using float specifier is ch= %f ",ch,ch,ch);
+    printf("\nentered decimal number is temp=%f\n using char specifier is temp=%c\n using int specifier is temp=%d ",temp,temp,temp);
+    return 0;
+}
