@@ -1,0 +1,9 @@
+BEGIN
+NUMBER NUM
+OUTPUT("enter the character")
+INPUT ch
+OUTPUT("enter the number")
+INPUT num
+OUTPUT("enter the temperature")
+INPUT temp
+OUTPUT print each variables using  %d,%c and %f 
