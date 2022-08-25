@@ -1,0 +1,17 @@
+Write a program to input data from user using scanf() and display using printf()
+#include <stdio.h>
+#define temperature 50.67 //assigning value to variable 
+int num;  //declaring global variable
+int main()
+{
+    num=25; //assigning value to the variable
+    char ch;  //declaration of character variable
+    const int b=10;  //declaring constant
+    printf("enter the  character");
+    scanf("%c",&ch);   
+    
+    //print the values 
+    printf("the values are integer number is %d\ncharacter is %c\nconstant value is %d\ntempereture=%f",num,ch,b,temperature);
+
+    return 0;
+}
