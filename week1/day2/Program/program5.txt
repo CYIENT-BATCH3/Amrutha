@@ -1,0 +1,43 @@
+//wap to input 10 characters and find its ASCII value
+#include <stdio.h>
+int main()
+{
+    char a1,a2;
+    char a3,a4;
+    char a5,a6;
+    char a7,a8;
+    char a9,a10;
+
+    printf("enter the characters\n");
+    scanf("%c%c",&a1,&a2); 
+    //printf("enter the characters\n");
+    //scanf("%c",&a2);
+     printf("enter the characters\n");
+    scanf("%c%c",&a3,&a4);
+    // printf("enter the characters\n");
+    //scanf("%c",&a4);
+   // printf("enter the characters\n");
+    //scanf("%c",&a5);
+     printf("enter the characters\n");
+    scanf("%c%c",&a5,&a6);
+    printf("enter the characters\n");
+scanf("%c",&a7);
+ printf("enter the characters\n");
+    scanf("%c",&a8);
+ printf("enter the characters\n");
+    scanf("%c",&a9);
+     printf("enter the characters\n");
+    scanf("%c",&a10);
+     printf("AScii value of the characters %c=%d\n",a1,a1);
+    printf("AScii value of the characters %c=%d\n",a2,a2);
+    printf("AScii value of the characters %c=%d\n",a3,a3);
+    printf("AScii value of the characters %c=%d\n",a4,a4);
+    printf("AScii value of the characters %c=%d\n",a5,a5);
+    printf("AScii value of the characters %c=%d\n",a6,a6);
+    printf("AScii value of the characters %c=%d\n",a7,a7);
+    printf("AScii value of the characters %c=%d\n",a8,a8);
+    printf("AScii value of the characters %c=%d\n",a9,a9);
+    printf("AScii value of the characters %c=%d\n",a10,a10);
+    
+    return 0;
+}
