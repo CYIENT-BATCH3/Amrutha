@@ -1,0 +1,19 @@
+Write a program to input a value in decimal, octal and hexadecimal values in a character value using scanf() 
+
+
+
+#include <stdio.h>
+int main()
+{
+ unsigned char val1;
+ unsigned char val2;
+ unsigned char val3;
+ printf("enter the decimal number");
+ scanf("%f",&val1);
+ printf("enter the octal number");
+ scanf("%o",&val2);
+ printf("enter the hexadecimal number");
+ scanf("%x",&val3);
+ printf("decimal value:%f\noctal:%o\nhexadecimal value :%x",val1,val2,val3);
+    return 0;
+}
