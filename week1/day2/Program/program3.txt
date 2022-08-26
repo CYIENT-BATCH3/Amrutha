@@ -1,0 +1,14 @@
+wap that prints the storage space taken by a float type and its range values
+
+#include <stdio.h>
+#include<float.h>
+int main()
+{
+    
+    printf("storage size for float:%d\n",sizeof(float));//printing the storage size taken by the float using sizeof() operator.
+    printf("Minimum positive value :%E\n",FLT_MIN); //Range of minimum positive value of float
+    printf("Maximum positive value :%E\n",FLT_MAX); //Range of maximum positive value of float
+    printf("Precision value:%d\n",FLT_DIG);      //Print the precision value of float
+
+    return 0;
+}
