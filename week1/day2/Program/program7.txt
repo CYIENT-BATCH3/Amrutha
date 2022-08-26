@@ -1,0 +1,12 @@
+wap to input a hexadecimal value using scanf in c
+#include <stdio.h>
+int main()
+{
+//declaration of variable
+ unsigned int num;
+ printf("enter the hexadecimal number");
+ scanf("%x",&num);
+ printf("hexadecimal value :%x",num);//print the hexadecimal value
+    return 0;
+}
+
