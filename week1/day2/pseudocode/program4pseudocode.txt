@@ -1,0 +1,8 @@
+BEGIN
+STATIC int b
+char nam
+FLOAT temp
+CONST int temp
+OUTPUT "entr a number"
+INPUT integer num1
+OUTPUT  all the variables 
