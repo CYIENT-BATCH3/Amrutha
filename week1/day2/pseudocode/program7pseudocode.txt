@@ -1,0 +1,5 @@
+BEGIN
+UNSIGNED INT num
+OUTPUT "enter the hexadecimal number"
+INPUT take the hexadecimal number to num
+OUTPUT print the num value
