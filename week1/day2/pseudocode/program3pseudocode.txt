@@ -1,0 +1,5 @@
+BEGIN
+OUTPUT storage size for float,SIZEOF(float)
+OUTPUT minimum positive value,FLT_MIN
+OUTPUT maximum positive value,FLT_MAX
+OUTPUT precision value,FLT_DIG
