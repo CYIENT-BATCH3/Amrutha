@@ -1,0 +1,15 @@
+program using relational operator
+#include <stdio.h>
+int main()
+{
+//declaration and initialisation of variables
+   int num1=34,num2=35;
+
+   (num1==num2)?puts("True"):puts("False"); //comparing if num1 and num2 are equal
+   (num1>num2)?puts("num1 is bigger"):puts("num2 is bigger");  //comparing if num1 greater than num2 or not
+   (num1<num2)?puts("num1 is small"):puts("num2 is small"); //comparing if num1 is smaller than num2 or not
+   (num1!=num2)?puts("True"):puts("False");
+   
+  
+    return 0;
+}
