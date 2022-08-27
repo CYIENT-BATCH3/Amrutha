@@ -1,0 +1,13 @@
+Implement basic logic gates using c(AND,OR,NOT).consider the inputs:0 0
+
+#include <stdio.h>
+int main()
+{
+   int inp1=0,inp2=0;//initialising inputs as 0
+   (inp1&&inp2)?puts("1"):puts("0"); //logical AND operation
+   (inp1||inp2)?puts("1"):puts("0"); //logical OR operation
+    !(inp1)?puts("1"):puts("0"); //logical not
+   
+  
+    return 0;
+}
