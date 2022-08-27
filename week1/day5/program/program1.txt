@@ -1,0 +1,28 @@
+Take a 6 digit number as input from the user and reverse the number.make sure that the number does not include a '0' in any of ots digits.
+#include <stdio.h>
+int main()
+{
+//declaration of variables
+   int num;
+   int r1,r2,r3,r4,r5,r6,rev;
+
+   printf("enter the number");
+   scanf("%d",&num);//taking input from user
+
+   r1=num%10; //dividing using modulus operator to get reminder
+   num=num/10;//dividing to get coefficient
+   r2=num%10;
+   num=num/10;
+   r3=num%10;
+   num=num/10;
+   r4=num%10;
+   num=num/10;
+   r5=num%10;
+   num=num/10;
+   r6=num%10;
+   num=num/10;
+   rev=r1*100000+r2*10000+r3*1000+r4*100+r5*10+r6;
+   printf("%d",rev);
+   
+    return 0;
+}
