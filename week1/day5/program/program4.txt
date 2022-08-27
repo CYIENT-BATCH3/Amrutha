@@ -1,0 +1,22 @@
+A message ID is required to send data via CAN communication between ECU's.Accept a random 2-digit message ID from the user to send data.Keep in mind that the given ECU only accepts binary form of the message ID.
+Write a program to convert the 2-digit ID to binary form. 
+#include <stdio.h>
+
+int main() {
+    // declaration of variables
+    int ID;
+    
+    printf("enter the ID");
+    scanf("%d",&ID); //taking the input
+    
+    //usig left shift operator shifting 1 and performing AND operation with the ID
+    (ID&(1<<7))?printf("1"):printf("0");
+    (ID&(1<<6))?printf("1"):printf("0");
+    (ID&(1<<5))?printf("1"):printf("0");
+    (ID&(1<<4))?printf("1"):printf("0");
+    (ID&(1<<3))?printf("1"):printf("0");
+    (ID&(1<<2))?printf("1"):printf("0");
+    (ID&(1<<1))?printf("1"):printf("0");
+    (ID&1)?printf("1"):printf("0");
+    return 0;
+}
