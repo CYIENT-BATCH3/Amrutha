@@ -1,0 +1,22 @@
+// 
+#include<stdio.h>
+int main()
+{
+int a;
+char ch;
+float divi;
+long int num2;
+printf("enter the values");
+scanf("%d%f%ld",&a,&divi,&num2);
+printf("enter the character");
+scanf("%c",&ch);
+printf("number=%d\ndecimal number=%f\nlong integer=%ld",a,divi,num2);
+
+printf("character=%c",ch);
+
+char b;
+b=getchar();
+putchar(b);
+return 0;
+
+}
