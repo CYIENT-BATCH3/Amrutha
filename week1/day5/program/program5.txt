@@ -1,0 +1,19 @@
+5 balls are numbered with random 1-digit number each.Assign these numbers using user input.print whether each ball is assigned odd or even number. 
+#include <stdio.h>
+
+int main() {
+    // declaration of variables
+    int b1,b2,b3,b4,b5;
+    
+    printf("enter the numbers on the balls");
+    scanf("%d%d%d%d%d",&b1,&b2,&b3,&b4,&b5);//taking numbers on the balls
+    
+    //checking the numbers on the ball is even or odd
+    (b1%2==0)?printf("ball1 is even"):printf("ball1 is odd");
+    (b2%2==0)?printf("\nball2 is even"):printf("\nball2 is odd");
+    (b3%2==0)?printf("\nball3 is even"):printf("\nball3 is odd");
+    (b4%2==0)?printf("\nball4 is even"):printf("\nball4 is odd");
+    (b5%2==0)?printf("\nball5 is even"):printf("\nball5 is odd");
+    
+    return 0;
+}
