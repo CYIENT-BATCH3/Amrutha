@@ -1,0 +1,17 @@
+Consider the weights of 3 persons as inputs and find the heaviest among them and print 
+
+#include<stdio.h>
+int main()
+{
+float w1,w2,w3; declaration of variables to store the weights
+
+printf("enter the weights");
+scanf("%f%f%f",&w1,&w2,&w3); // taking input from user
+
+//comparing each weights using relational operator and ternary operator
+(w1>w2)?((w1>w3)?printf("w1 is heavier"):printf("w3 is heavier")):((w2>w3)?printf("w2 is heavier"):printf("w3 is heavier"));
+
+
+return 0;
+
+}
