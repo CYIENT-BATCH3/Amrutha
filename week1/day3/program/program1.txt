@@ -1,0 +1,52 @@
+wap to iput 5 intger values, 3 char values and 4 float values.
+a)print all the input values
+b)print te float sum and integer sum of the float values
+c)print the sum of the integer values and divide it by the float sum calculated in question b
+#include <stdio.h>
+int main()
+{
+ int num1,num2,num3,num4,num5;
+ float val1,val2,val3,val4;
+ 
+ char ch1;
+ char ch2;
+ char ch3;
+ 
+ 
+ 
+ printf("enter the integer numbers");
+ scanf("%d%d%d%d%d",&num1,&num2,&num3,&num4,&num5);
+ 
+ printf("enter the float values");
+ scanf("%f%f%f%f",&val1,&val2,&val3,&val4);
+ 
+ printf("enter the characters");
+ scanf("%s",&ch1);
+ printf("enter the characters");
+ scanf("%s",&ch2);
+ printf("enter the characters");
+ scanf("%s",&ch3); 
+ 
+ printf("integer values are, %d\n%d\n%d\n%d\n%d\n",num1,num2,num3,num4,num5);
+ 
+ 
+ printf("float values are:%f\n%f\n%f\n%f\n",val1,val2,val3,val4);
+ 
+// printf("charcaters are:%c\n%c\n%c\n",ch1,ch1,ch3);
+ 
+int sum1=num1+num2+num3+num4+num5;
+
+float sum2=val1+val2+val3+val4;
+
+int float_sum3=val1+val2+val3+val4;
+
+float dividvalue=sum1/sum2;
+
+printf("float sum of float values=%f\nint sum of float values=%d\n",sum2,float_sum3);
+
+printf("sum of integers=%d\n",sum1);
+
+printf("divided vlaue=%f",dividvalue);
+
+    return 0;
+}
