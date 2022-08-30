@@ -1,0 +1,38 @@
+
+wap using nested if for checking the grade of a student
+#include<stdio.h>
+int main()
+{
+   int mark; //declaring the variable to store mark
+   
+   printf("Enter the values");
+   scanf("%d",&mark);//taking input 
+   
+   //check grade of mark
+    if((mark>=70)&&(mark<=100))
+    {
+        printf("Grade D");
+        
+    }
+    else if((mark>=60)&&(mark<=69))
+    {
+        printf("Grade F");
+    }
+    else if((mark>=50)&&(mark<=59))
+    {
+        
+       printf("Grade S"); 
+    }
+    else if((mark>=35)&&(mark<=40))
+    {
+        
+       printf("pass"); 
+    }
+    else
+    {
+        
+       printf("fail"); 
+    }
+    
+return 0;
+}
