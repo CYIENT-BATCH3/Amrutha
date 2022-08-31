@@ -1,0 +1,26 @@
+wap to print fibanaucci series
+#include<stdio.h>
+int main()
+{
+    //declare the variables and initialising a as 0,b=1
+  int a=0,b=1,c,n;
+  int i=0;
+  
+//taking input from user
+  printf("enter number");
+  scanf("%d",&n);
+
+//print series of fibanaucci series
+ while(i<=n)
+ {
+   //print the value of a
+ printf("%d\n",a);
+ c=a+b;
+ a=b;
+ b=c;
+   i++;
+ }
+
+
+return 0;
+}

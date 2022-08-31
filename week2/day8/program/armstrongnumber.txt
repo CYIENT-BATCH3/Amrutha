@@ -1,0 +1,40 @@
+//wap to check the entered number is armstrong or not
+#include<stdio.h>
+int main()
+{
+    //declare the variables and initialising a as 0,b=1
+  int a,x,d,num;
+  int count=0,s=0;
+  
+//taking input from user
+  printf("enter number");
+  scanf("%d",&num);
+  
+  x=num;//copying the entered number to x
+
+//setting the condition entered number not equal to 0
+ while(num!=0)
+ {
+ a=num%10;//modulus operation to seperate each digit
+ d=a*a*a;//taking cube of each digit
+ s=s+d;//find the sum of cube of digits
+ num=num/10;//dividing by 10 
+ }
+ 
+ if(x==s)
+ {
+     count++;
+ }
+ 
+ if(count==1)
+ {
+     printf("%d is Armstrong number",x);
+ }
+ else
+ {
+   printf("%d is not Armstrong number",x);  
+ }
+
+
+return 0;
+}
