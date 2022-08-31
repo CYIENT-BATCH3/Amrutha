@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+
+//declaring the variables to store employee details
+union person{
+    
+    int employ__id;
+    char employee__name[30];
+    char employee_department[30];
+    float salary;
+}employees;
+int main()
+ {
+  //taking employees details from user
+  union person det;
+   printf("enter the employee id");
+   scanf("%d",&det.employ__id);
+   printf("enter the name");
+   scanf(" %s",&det.employee__name);
+   printf("enter the department");
+   scanf(" %s",&det.employee_department);
+   printf("enter the salary");
+   scanf("%f",&det.salary);
+
+//print the employees details
+   printf("the employee id is:%d\nname:%s\ndepartment:%s\nsalary:%f",det.employ__id,det.employee__name,det.employee_department,det.salary);
+   
+     
+}

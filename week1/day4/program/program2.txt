@@ -1,0 +1,28 @@
+using structure
+
+#include<stdio.h>
+#include<string.h>
+struct person{
+    
+    int employ__id;
+    char employee__name[30];
+    char employee_department[30];
+    float salary;
+}employees;
+int main()
+ {
+  // getting the employees details from user
+   printf("enter the employee id");
+   scanf("%d",&employees.employ__id);
+   printf("enter the name");
+   scanf("%s",&employees.employee__name);
+   printf("enter the department");
+   scanf("%s",&employees.employee_department);
+   printf("enter the salary");
+   scanf("%f",&employees.salary);
+
+//print the employee details
+   printf("the employee id is:%d\nname:%s\ndepartment:%s\nsalary:%f",employees.employ__id,employees.employee__name,employees.employee_department,employees.salary);
+   
+     
+}

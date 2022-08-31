@@ -1,0 +1,12 @@
+wap using enum
+
+#include<stdio.h>
+enum lcd{clear=0x01,initialisation=0x0E,display=0x08,entry=0x06,firstline=0x80}; //declaration
+int main()
+{
+//print the data
+printf("clear the display:%x\n",clear);    
+printf("LCD initialisation:%x\n",initialisation);  
+printf("display off:%x\n",display); 
+printf("cursor on first line:%x\n",firstline);
+}
