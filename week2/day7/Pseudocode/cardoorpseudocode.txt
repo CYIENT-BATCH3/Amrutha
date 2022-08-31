@@ -1,0 +1,23 @@
+Algorithm 
+
+step1:Read variable v_driverside_door value,v_passengerside_door,v_tail_door
+
+step2:for driverside first door, read bit position 6
+step2.1:If 6th bit is 0, door is close
+step2.2:If 6th bit is 1, door is open
+
+step3:for driverside second door, read bit position 7
+step3.1:If 7th bit is 0, door is close
+step3.2:If 7th bit is 1, door is open
+
+step4:for passengerside first door, read bit position 3
+step4.1:If 3rd bit is 0, door is close
+step4.2:If 3rd bit is 1, door is open
+
+step5:for passengerside second door, read bit position 3
+step5.1:If 4th bit is 0, door is close
+step5.2:If 4th bit is 1, door is open
+
+step6:for tail door constraint read bit position 0
+step6.1:if 0th bit is 0, door is open
+step6.2:if 0th bit is 1, door is close
