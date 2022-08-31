@@ -1,0 +1,48 @@
+Write a program to identify vehicle door status as pr below requirements.
+Rq1:vehicle "Leco" has 5 doors.
+Rq2:Door status is open if the respective variable bit is set to 1
+Rq3:Door status is close if the respective variable bit is set to 0
+Rq4:Variable v_Driver_side_doors contain 2 doors status of driver side in bit position 6,7
+Rq5:Variable v_Passenger_side_doors contain 2 doors status of passenger side in bit position 3,4
+Rq6:Variable v_tail_doors_constrain doors status of tail door status 0
+Identify each door status of the vehicle "Leco" if variable values are as below and print ach doors status whether it is open or closed
+v_Driver_side_doors=0xA5;
+v_passenger_side_doors=0x55;
+v_tail_doors_constrain=0xAA;
+
+#include <stdio.h>
+
+int main() {
+    
+    //declaration of variables
+    int v_Driver_side_doors=0xA5;
+    int v_passenger_side_doors=0x55;
+    int v_tail_doors_constrain=0xAA;
+    
+    int driver_side_door1;
+    int driver_side_door2;
+    int passenger_side_door1;
+    int passenger_side_door2;
+    int tail_doors;
+    
+    //checkig th status of car doors by extracting respective bits
+    driver_side_door1=v_Driver_side_doors&(1<<6);//left shifting 6bits of 1 to extract 6th bit of driver side first door
+    driver_side_door2=v_Driver_side_doors&(1<<7);//left shifting 7bits of 1 to extract 7th bit of driver side second door
+    passenger_side_door1=v_passenger_side_doors&(1<<3);//left shifting 3bits of 1 to extract 3rd bit of passenger side first door
+    passenger_side_door2=v_passenger_side_doors&(1<<4);//left shifting 4bits of 1 to extract 4th bit of passenger side second door
+    tail_doors=v_tail_doors_constrain&(0x01);//extracting 0th bit of tail door
+    
+    //print the status of driverside door
+    (driver_side_door1==0)?printf("\ndriver side first door is open"): printf("\ndriver side first door  is close");
+    (driver_side_door2==0)?printf("\ndriver side second door is open"): printf("\ndriver side second door  is close");
+    
+    //print the status of passenger side door
+    (passenger_side_door1==0)?printf("\npassenger side first door is open"): printf("\npassenger side first door  is close");
+    (passenger_side_door2==0)?printf("\npassenger side second door is open"): printf("\npassenger side second door  is close");
+    
+    //print the status of tail door
+    (tail_doors==0)?printf("\ntail door is open"): printf("\ntail door  is close");
+    
+   
+     return 0;   
+    }
