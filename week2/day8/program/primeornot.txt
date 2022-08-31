@@ -1,0 +1,31 @@
+wap to check the entered number is prime or not using while loop
+#include<stdio.h>
+int main()
+{
+    //declare the variables
+  int n;
+  int i=2,count=0;
+
+//taking the input number from user to check if it is prime or not
+  printf("enter number");
+  scanf("%d",&n);
+
+//performing modulus operation on the entered number to from 0 to number/2 to check if it is divisible or not 
+ while(i<=n/2)
+ {  
+  if(n%i==0) 
+  {
+      count++;
+  }
+  i++;
+ }
+ if(count>0)
+ {
+ printf("number is not prime");
+ }
+ else
+ {
+     printf("prime");
+ }
+return 0;
+}

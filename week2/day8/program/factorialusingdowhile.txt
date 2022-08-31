@@ -1,0 +1,25 @@
+wap to find the factorial of a number using do while loop
+#include<stdio.h>
+int main()
+{
+    //declare the variables
+  int n;
+  double fact=1;
+  int i=1;
+  
+//taking input from user
+  printf("enter number");
+  scanf("%d",&n);
+
+
+ do
+ {
+   fact=fact*i;//multiplying 1 to upto the number entered to find factorial
+   i++;
+ }
+ while(i<=n);
+
+//print the factorial 
+ printf("factorial of %d=%f",n,fact);
+return 0;
+}

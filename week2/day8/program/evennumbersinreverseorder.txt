@@ -1,0 +1,22 @@
+wap to print series of even numbers in reverse order
+#include<stdio.h>
+int main()
+{
+    //declare the variables
+   int num,i;
+
+  // teking input from user 
+    printf("enter the range");
+    scanf("%d",&num);
+i=num;
+   while(i>=1)
+   {
+      if(i%2==0)
+      {
+          printf("%d\n",i);
+      }
+     i--;  //i value decrements
+   }
+   
+return 0;
+}

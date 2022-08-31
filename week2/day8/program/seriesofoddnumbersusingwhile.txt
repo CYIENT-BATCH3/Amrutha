@@ -1,0 +1,22 @@
+write a program using while loop to print odd numbers from 1 to n
+#include<stdio.h>
+int main()
+{
+    //declare the variables
+   int num,i=1;
+ 
+//taking input from user i.e range of  odd numbers to print   
+    printf("enter the range");
+    scanf("%d",&num);
+
+   while(i<=num)//setting the condition to print odd numbers to the entered value
+   {
+      if(i%2==1)//performing modulus operation by 2 and if the reminder is 1 print the number
+      {
+          printf("%d\n",i);
+      }
+     i++;  
+   }
+   
+return 0;
+}

@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+//declaration of variables
+   int i,mul,num;
+
+//taking input from user i.e choosing the number to display multiplication table
+    printf("enter the number");
+    scanf("%d",&num);
+//printing multiplication table upto 10 using for loop
+   for(i=1;i<=10;i++)
+   { mul=i*num;
+       printf("%d*%d=%d\n",i,num,mul);
+   }
+   
+return 0;
+}
