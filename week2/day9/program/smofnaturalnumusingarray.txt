@@ -1,0 +1,30 @@
+WAP to print sum of n natural numbers stored in an array
+#include <stdio.h>
+
+int main() {
+    // declaration of variables
+    int arr[60];
+    int n,i,sum;
+    
+    //getting the range of array from user
+    printf("enter the range of array");
+    scanf("%d",&n);
+    
+    //getting the input from the user
+    printf("enter the numbers");
+    for(i=0;i<n;i++)
+    {
+        
+        scanf("%d",&arr[i]);
+    }
+    
+    //finding the sum of values stored in array
+    for(i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+        
+    }
+    
+printf("sum %d natural numbers=%d\n",n,sum);
+    return 0;
+}

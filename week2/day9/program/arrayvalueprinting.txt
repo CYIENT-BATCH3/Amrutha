@@ -1,0 +1,30 @@
+WAP to read the elements and print elements of an array using 1D array
+#include <stdio.h>
+
+int main() {
+    // declaration of variables
+    int arr[10];
+    int n,i;
+    
+    //getting the range of array from user
+    printf("enter the range of array");
+    scanf("%d",&n);
+    
+    //getting the input from the user
+    printf("enter the numbers");
+    for(i=0;i<n;i++)
+    {
+        
+        scanf("%d",&arr[i]);
+    }
+    
+    //print the array elements 
+     printf("array values are:");
+    for(i=0;i<n;i++)
+    {
+        
+        printf("%d\n",arr[i]);
+    }
+
+    return 0;
+}

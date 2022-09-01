@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+    // declaration of variables
+    int p[60];
+    int i,plant,n=20;
+    
+    int vin1=186; //declaring and defining the initial VIN number in plant1
+    int vin2=300; //declaring and defining the initial VIN number in plant2
+    int vin3=400;  //declaring and defining the initial VIN number in plant3
+    
+    //select the plant to print the VIN number
+    printf("select the plant");
+    scanf("%d",&plant);
+   
+   //based on the selection of plant prints the VIN numbers 
+    if(plant==1)
+    {
+    for(i=0;i<20;i++)
+    {
+        p[i]=vin1;
+        vin1++;
+         printf("VIN of vehicle manufactured at EC=1CYLE10P3YEC109%d\n",p[i]);
+    }
+    }
+    if(plant==2)
+    {
+    for(i=0;i<20;i++)
+    {
+        p[i]=vin2;
+        vin2++;
+         printf("VIN of vehicle manufactured at HY=1CYLE10P3YEC109%d\n",p[i]);
+        
+    }
+    }
+    if(plant==3)
+    {
+    for(i=0;i<20;i++)
+    {
+    
+        p[i]=vin3;
+         printf("VIN of vehicle manufactured at PU=1CYLE10P3YEC109%d\n",p[i]);
+        vin3++;
+    }
+    }
+    
+
+    return 0;
+}
