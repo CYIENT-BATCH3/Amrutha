@@ -1,0 +1,23 @@
+#include<stdio.h>
+//function for adding two numbers
+void swap();
+int main() 
+{
+    //calling the functions
+    swap();
+
+    return 0;
+}
+void swap()
+{
+    //declaration of variables
+    int x,y;
+    //getting input from user
+    printf("enter the numbers");
+    scanf("%d%d",&x,&y);
+    
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    printf("swapped values of  x=%d\n y=%d",x,y);//printing swapped value
+}

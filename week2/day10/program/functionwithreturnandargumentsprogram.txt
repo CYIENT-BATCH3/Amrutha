@@ -1,0 +1,47 @@
+#include<stdio.h>
+//function with argument declaration
+int sum(int x,int y);
+int sub(int x,int y);
+int mul(int x,int y);
+
+int main() 
+{
+    int v_val1,v_val2; //declaring actual arguments
+    int v_addition,v_difference,v_product;
+    
+    //getting input from user
+    printf("enter the numbers");
+    scanf("%d%d",&v_val1,&v_val2);
+    
+    //calling functions
+v_addition=sum(v_val1,v_val2);
+v_difference=sub(v_val1,v_val2);
+v_product=mul(v_val1,v_val2);
+
+//printing the result
+printf("addition=%d\n",v_addition);
+printf("difference=%d\n",v_difference);
+printf("product=%d\n",v_product);
+    return 0;
+}
+
+//function definition
+int sum(int x,int y)
+{
+    int sum=x+y; //addition operation
+
+    return (sum);//returning the result 
+}
+int sub(int x,int y)
+{
+    int subtraction=x-y;//subtraction operation
+
+return (subtraction);//returning the result
+    
+}
+int mul(int x,int y)
+{
+    int product=x*y; //multiplication operation
+     return (product);//returning the result
+    
+}

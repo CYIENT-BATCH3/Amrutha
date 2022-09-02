@@ -1,0 +1,38 @@
+#include<stdio.h>
+//function for adding two numbers
+void sum();
+void sub();
+void mul();
+int main() 
+{
+    //calling the functions
+    sum();
+    sub();
+    mul();
+
+    return 0;
+}
+void sum()
+{
+    //declaration of variables
+    int x=5,y=4;
+    int sum=0;
+    sum=x+y;//defining sum
+    printf("sum=%d",sum);//printing sum value
+}
+void sub()
+{
+    //declaration of variables
+    int x=4,y=2;
+    int sub=0;
+    sub=x-y;//defining subtraction
+    printf("subtraction=%d",sub);//printing subtraction value
+}
+void mul()
+{
+    //declaration of variables
+    int x=4,y=5;
+    int mul=1;
+    mul=x*y;//defining multiplication operation
+    printf("product=%d",mul);//printing product value
+}
