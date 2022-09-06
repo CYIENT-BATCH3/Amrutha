@@ -1,0 +1,39 @@
+#include <stdio.h>
+//function declaration
+float avg(float *av,int n);
+
+int main() 
+{
+//declaration of variables
+int arr[20],x,i;
+
+//getting the range of array from user
+printf("enter the range");
+scanf("%d",&x);
+
+//getting the numbers from user
+printf("enter the numbers");
+for(i=0;i<x;i++)
+{
+scanf("%f",&arr[i]);
+}
+float result=avg(arr,x);
+printf("average of given numbers=%f",result);
+    
+}
+//function definition
+float avg(float *av,int n)
+{
+    int i,sum=0;
+    
+    //finding sum
+    for(i=0;i<n;i++)
+    {
+     sum=sum+av[i];   
+    }
+    //print the sum
+    printf("sum of given numbers=%d",sum);
+    
+    //finding average
+    float average=sum/n;
+}

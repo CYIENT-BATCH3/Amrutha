@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int *get();
+ int a=10;//global variable declaration
+int main() {
+//declaration    
+int *p;
+p=get();//calling function
+
+//print the values
+printf("%u\n",p);
+printf("%d\n",*p);
+ 
+}
+//function definition
+int *get()
+{
+    return &a;
+}
+
+//usig static variable
+#include <stdio.h>
+
+int *get();
+static int a=10;//global variable declaration
+int main() {
+//declaration    
+int *p;
+p=get();//calling function
+
+//print the values
+printf("%u\n",p);
+printf("%d\n",*p);
+ 
+}
+//function definition
+int *get()
+{
+    return &a;
+}
