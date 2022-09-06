@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    // declaration of variables
+    int num=45;
+    char ch='A';
+    float decim=4.6;
+    
+    //declaration and definition of pointers
+    int *p=&num;
+    char *ptr=&ch;
+    float *pt=&decim;
+    
+    //print the values and addresses in different methods
+    printf("number=%d address=%d \nvalue using pointer=%d using pointer address=%d\n",num,&num,*p,p);
+    printf("character=%c address=%d \nvalue using pointer=%d address using pointer=%d\n",ch,&ch,*ptr,ptr);
+    printf("decimal number=%f address=%d \nvalue using pointer=%f using pointer address=%d \n",decim,&decim,*pt,pt);
+    printf("address of pointer var=%p",*p);
+    return 0;
+}

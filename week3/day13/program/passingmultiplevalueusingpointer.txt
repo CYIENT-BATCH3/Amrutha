@@ -1,0 +1,24 @@
+#include <stdio.h>
+void result(int *a,int *b,int *c,int *d);//function declaration
+int main()
+{
+    //declaration of variables
+    int x,y,z,p;
+
+//getting input from user
+    printf("enter the values");
+    scanf("%d %d %d %d",&x,&y,&z,&p);
+
+//calling function
+    result(&x,&y,&z,&p);
+
+    return 0;
+}
+
+//function definition
+void result(int *a,int *b,int *c,int *d)
+{
+    
+    printf("the values are %d %d %d %d",*a,*b,*c,*d);
+    
+}

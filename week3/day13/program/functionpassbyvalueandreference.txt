@@ -1,0 +1,27 @@
+#include <stdio.h>
+void result(int a,int b,int *p,int *c);
+int main()
+{
+    //declaration of variables
+    int x,y;
+    int *q,*r;
+    
+    q=&x;
+    r=&y;
+    //getting input from user
+    printf("enter the values");
+    scanf("%d%d",q,r);
+    
+    //calling function
+    result(x,y,q,r);
+     printf("the values are quotient=%d remainder=%d",*q,*r);
+    
+}
+
+//function definition
+void result(int a,int b,int *c,int *d)
+{
+    *c=a/b;
+    *d=a%b;
+   
+}

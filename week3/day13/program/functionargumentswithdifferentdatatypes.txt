@@ -1,0 +1,26 @@
+#include <stdio.h>
+void result(int *a,int *b,float *c,char *d);
+int main()
+{
+    //declaration of variables
+    int x,y;
+    float z;
+    char p;
+    
+    //getting input from user
+    printf("enter the values");
+    scanf("%d %d %f %c",&x,&y,&z,&p);
+    
+    //calling function
+    result(&x,&y,&z,&p);
+
+    return 0;
+}
+
+//function definition
+void result(int *a,int *b,float *c,char *d)
+{
+    
+    printf("the values are %d %d %f %c",*a,*b,*c,*d);
+    
+}

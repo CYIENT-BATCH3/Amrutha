@@ -1,0 +1,71 @@
+#include <stdio.h>
+void swap(int *x,int *y);//function declaration
+
+int main() {
+    // declaration of variables
+    int a,b,*pa,*pb;
+    
+    pa=&a;
+    pb=&b;
+
+//getting input from user
+    printf("enter the values to be swapped");
+    scanf("%d%d",&a,&b);
+    
+    //calling swap function
+    swap(&a,&b);
+    
+    //return 0;
+}
+
+//function definition
+void swap(int *x,int *y)
+{
+    //declaration of variables
+    int temp;
+    
+    //swap operation
+    temp=*x;
+    *x=*y;
+    *y=temp;
+    
+    //print the result
+    printf("swapped values=%d %d",*x,*y);
+}
+
+
+
+#include <stdio.h>
+void swap(int *x,int *y);//function declaration
+
+int main() {
+    // declaration of variables
+    int a,b,*pa,*pb;
+    
+    pa=&a;
+    pb=&b;
+
+//getting input from user
+    printf("enter the values to be swapped");
+    scanf("%d%d",pa,pb);
+    
+    //calling swap function
+    swap(pa,pb);
+    
+    //return 0;
+}
+
+//function definition
+void swap(int *x,int *y)
+{
+    //declaration of variables
+    int temp;
+    
+    //swap operation
+    temp=*x;
+    *x=*y;
+    *y=temp;
+    
+    //print the result
+    printf("swapped values=%d %d",*x,*y);
+}
