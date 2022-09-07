@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // declaration and definition
+    char str[50]="amrutha";
+
+    printf("the given string i=%s\n",str);
+    
+printf("reverse of entered string=%s\",strrev(str));//result
+    //return 0;
+}

@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    // declaration of pointers
+    int *p,*q;
+    
+    printf("addition=%d",*p+*q);
+    return 0;
+}

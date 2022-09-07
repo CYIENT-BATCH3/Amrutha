@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    // declaration 
+    int a=5,b=6;
+    int *p,*q;
+    
+    //assigning values
+    *p=&a;
+    *q=&b;
+   
+   //print the result 
+    printf("addition=%d",p+q);
+    return 0;
+}
+
+
+Remarks:segmentation fault
