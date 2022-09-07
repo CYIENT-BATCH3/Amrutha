@@ -1,0 +1,14 @@
+#include <stdio.h>
+const int MAX=4;
+int main() {
+    // declaring and defining variables
+    char *names[]={"zara ali","nuha ali","ali","hey"};
+    
+  int i=0;
+  //print the datas
+  for(i=0;i<MAX;i++)
+  {
+printf("value of names[%d]=%u--%s\n",i,names[i],names[i]);
+    
+}
+}
