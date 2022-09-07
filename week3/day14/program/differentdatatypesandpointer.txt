@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    
+    //variable declaration and definition 
+    int a=20;
+    float b=30.5;
+    char ch='a';
+    double s=23234.36547;
+    long int num=124325536;
+    void *p;//void pointer declaration
+    
+    //assigning integer variable a's address to void pointer
+    p=&a;
+    printf("value of a=%d\n",*(int *)p);
+    
+    //assigning char variable ch's address to void pointer
+    p=&ch;
+    printf("value of ch=%c\n",*(char *)p);
+    
+    //assigning float variable b's address to void pointer
+    p=&b;
+    printf("value of b=%f\n",*(float *)p);
+    
+    
+    p=&s;
+    printf("value of s=%f",*(double *)p);
+    
+    
+    p=&b;
+    printf("value of b=%f",*(float *)p);
+    return 0;
+}
