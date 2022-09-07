@@ -1,0 +1,62 @@
+#include<stdio.h>
+
+//function declaration
+void temper(int *temperat);
+void humid_value(int *humid);
+void water_val(int *water);
+
+int main()
+{
+//declaration of variables
+    int temp_sen,humid_sen,water_levelsen;
+
+
+//declaration of pointers
+    int *temp=&temp_sen;
+    int *humi=&humid_sen;
+    int *water=&water_levelsen;
+
+//calling functions
+    temper(&temp_sen);
+    humid_value(&humid_sen);
+    water_val(&water_levelsen);
+    water_val(&water_levelsen);
+    temper(&temp_sen);
+    humid_value(&humid_sen);
+    water_val(&water_levelsen);
+    temper(&temp_sen);
+    humid_value(&humid_sen);
+    temper(&temp_sen);
+    water_val(&water_levelsen);
+    humid_value(&humid_sen);
+    
+}
+
+//defining functions
+void temper(int *temperat)
+{
+    
+    printf("\nenter the temparature\n");
+  scanf("%d",temperat);//reading input
+    printf("\n temparature is %d \n",*temperat);//printning the output
+}
+
+
+void humid_value(int *humid)
+{
+    
+    printf("\nenter humidity reading \n");
+  scanf("%d",humid);//reading input
+    printf("\n humidity=%d \n",*humid);
+    
+    
+}
+
+
+void water_val(int *water)
+{
+    
+    printf("\nenter water level\n");
+  scanf("%d",water);
+    printf("\n water level  is %d \n",*water);    
+}
