@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<string.h>
+//variable declaration
+struct employee
+{
+    int emp_id;
+    char name[20];
+    float salary;
+};
+
+int main() {
+
+    // Getting employee details from user
+    struct employee e1;
+    printf("enter the employee name\n");
+    scanf("%s",&e1.name);
+printf("enter the employee ID\n");
+    scanf("%d",&e1.emp_id);
+    printf("enter the salary");
+    scanf("%f",&e1.salary);
+
+//print the employee details
+    printf("employee name:%s\t",e1.name);
+    printf("employee ID:%d\t",e1.emp_id);
+    printf("saary:%f\t",e1.salary);
+    return 0;
+}
