@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include<string.h>
+//variable declaration
+union employee
+{
+    int emp_id;
+    char name[20];
+    float salary;
+    long int contact_num;
+}uemp;
+
+int main() {
+    //declaration
+    union employee e1[10];
+    int n,i;
+   
+   // Getting employee count from user
+    printf("enter the employee count\n");
+    scanf("%d",&n);
+    
+    // Getting employee details from user
+    for(i=0;i<n;i++)
+    {
+        printf("enter the employee name\n");
+    scanf("%s",e1[i].name);
+printf("enter the employee ID\n");
+    scanf("%d",&e1[i].emp_id);
+    printf("enter the salary\n");
+    scanf("%f",&e1[i].salary);
+    printf("enter the contact no:\n");
+    scanf("%ld",&e1[i].contact_num);
+    }
+    
+    //print the employee details
+     for(i=0;i<n;i++)
+    {
+    printf("employee name:%s\temployee ID:%d\tsalary:%f\tcontact no:%ld\n",e1[i].name,e1[i].emp_id,e1[i].salary,e1[i].contact_num);
+   // printf(" contact no:\n");
+    }
+//finding size of union
+    printf("size of union=%d bytes",sizeof(uemp));
+    return 0;
+}
