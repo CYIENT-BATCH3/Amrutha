@@ -1,0 +1,11 @@
+#include<stdio.h>
+//defining Age using macro
+#define AGE 18
+int main()
+{
+#ifndef AGE//if not defined age
+	printf("Age not defined");
+#else
+	printf("age is defined");
+#endif
+}

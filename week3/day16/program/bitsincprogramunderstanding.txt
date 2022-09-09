@@ -1,0 +1,31 @@
+//wap to store the value from 0 to 7 by using width of 3bits
+//bits in c structure padding
+#include<stdio.h>
+struct student
+{
+unsigned int s:3;//defing the range upto 7(3 digits)
+}s1;
+
+int main()
+{
+//print the size and value of 4 to 8
+s1.s=4;
+printf("size is %d\n",sizeof(s1));
+printf("value is %d\n",s1.s);
+
+s1.s=5;
+printf("size is %d\n",sizeof(s1));
+printf("value is %d\n",s1.s);
+
+s1.s=6;
+printf("size is %d\n",sizeof(s1));
+printf("value is %d\n",s1.s);
+
+s1.s=7;
+printf("size is %d\n",sizeof(s1));
+printf("value is %d\n",s1.s);
+
+s1.s=8;
+printf("size is %d\n",sizeof(s1));
+printf("value is %d\n",s1.s);//for 8 value is 0 as the range has set maximum 7
+}

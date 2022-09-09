@@ -1,0 +1,14 @@
+#include <stdio.h>
+#define square(x) (x*x) //define square operation using macro
+int main() {
+    // declare variable
+    int x;
+    
+    //getting input from user
+    printf("enter the number");
+    scanf("%d",&x);
+    
+    //print the result
+    printf("square of number=%d",square(x));
+    return 0;
+}

@@ -1,0 +1,31 @@
+//pragma usage understanding
+#include<stdio.h>
+
+struct student//declaring  struct variables
+{
+char ch;
+int x;
+float c;
+}s1;
+
+int main()
+{
+struct student s1;
+printf("size of memory after using pragma%d",sizeof(s1));//finding size without pragma
+}
+Remarks:without pragma it is 12
+#include<stdio.h>
+#pragma pack(1)//using pragma for reducing memory usage
+struct student//declaring  struct variables
+{
+char ch;
+int x;
+float c;
+}s1;
+
+int main()
+{
+struct student s1;
+printf("size of memory after using pragma%d",sizeof(s1));//finding size with using pragma
+}
+Remarks:without pragma it is 9
